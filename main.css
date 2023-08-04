@@ -1,0 +1,98 @@
+* {
+    /*Reset padrão do navegador para conter em todo arquivo CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e7e7e7; /*Cor de fundo do body*/
+    padding-top: 100px; /*Tamanho da marge de cima do body*/
+}
+
+header {
+    display: flex; /*Elementos um ao lado do outro*/
+    align-items: center; /*Para alinhar os itens na vertical*/
+    margin-bottom: 40px; /*Margem abaixo do cabeçalho para distanciar do formulário*/
+}
+
+header img {
+    height: 36px; /*Tamanho da imagem do título*/
+    margin-right: 16px; /*Margem direita da imagem do título*/
+}
+
+header h1 {
+    font-size: 40px; /*Tamanho da fonte do título*/
+    font-weight: bold; /*Formatação da fonte do título*/
+}
+
+.container {
+    max-width: 960px; /*Tamanho do container*/
+    width: 100%; /*ira ocupar 100% do tamanho do container*/
+    margin: 0 auto; /*Para centralizar na horizontal*/
+}
+
+form {
+    display: flex; /*Para alinhar as caixas de digitação ao botão*/
+    max-width: 640px; /*Area máxima de ocupação*/
+    width: 100%; /*Pode oculpar a área máxima*/
+    justify-content: space-between; /*Para distribuir o espacamento entre os itens*/
+    margin-bottom: 56px; /*Margem entre as caixas de entrada do formulário e a tabela*/
+}
+
+form input {
+    font-size: 24px; /*Tamanho da font das caixas de digitação do formulário*/
+    background-color: #fff; /*Cor das caixas de digitação do formulário*/
+    border: none; /*Remover as bordas das caixas de digitação*/
+    border-bottom: 2px solid #000; /*Borda inferior das caixas de digitação*/
+    padding: 8px; /*Margens das caixas de digitação*/
+}
+
+form button {
+    background-color: #009432; /*Cor do botão*/
+    color: #fff; /*Cor do texto do botão*/
+    font-size: 24px; /*Tamanho da fonte do botão*/
+    font-weight: bold; /*Modelo da fonte*/
+    border: none; /*Tirar a borda do botão*/
+    cursor: pointer; /*Trocar icone do mouse para a mão quando colocar o mouse em cima*/
+    padding: 8px; /*Margens do botão*/
+}
+
+table {
+    width: 100%; /*Largura da tabela para ocupar 100% da área do container*/
+}
+
+table th {
+    border-bottom: 2px solid #000; /*Para criar a linha embaixo dos nomes das colunas na tabela*/
+    padding: 16px; /*Espaçamento nas bordas dos nomes das colunas da tabela*/
+    font-size: 24px; /*Tamanho da fonte*/
+    font-weight: bold; /*Modelo da fonte*/
+}
+
+table td {
+    text-align: center; /*Para alinhar os itens da tabela com os titulos da coluna*/
+    font-size: 18px; /*Tamanho da fonte dos itens da tabela*/
+    padding: 16px 0; /*Margem dos itens da tabela*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /*Borda entre os itens databela, modelo da borda solida, tamanho da borda e cor da borda*/
+}
+
+table td img {
+    height: 30px; /*Tamanho do emoji de aprovado*/
+}
+
+.resultado {
+    padding: 8px; /*Tamanho da caixa de espaçamento do texto de aprovado*/
+    font-weight: bold; /*Modelo da fonte*/
+    color: #fff; /*Cor da fonte*/
+    background-color: #000; /*Cor do fundo do nome de aprovado*/
+    border-radius: 3px; /*Arredondar as bordas*/
+}
+
+.aprovado {
+    background-color: #009432; /*Estilização das cor de Aprovado*/
+}
+
+.reprovado {
+    background-color: #ff0000; /*Estilização das cor de Reprovado*/
+}
